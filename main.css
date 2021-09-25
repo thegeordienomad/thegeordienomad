@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+}
+
+
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+    background: url(/images/pexels-james-wheeler-1539225.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    
+}
+
+#overlay {
+    position: absolute;
+    border: 0;
+    margin: 0;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(66, 61, 58, 0.116);
+    
+}
+
+
+
+.center {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+
+
+h1 {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 7em;
+    font-weight: 2000;
+    background: -webkit-linear-gradient(120deg, #ff9812, #db0049);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#monkey-riot {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+     text-shadow: 1px 1px 1px;
+}
+
+#monkey-riot span {
+    font-size: 2em;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.884);
+}
+#clock {
+    display: flex;
+    width: 720px;
+    margin: 0 auto;
+}
+
+#clock div {
+  
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100px;
+    padding: 17px;
+    margin: 0 5px;
+    border: 1px #fff;
+    border-radius: 25px;
+    color: white;
+    font-weight: 400;
+    font-size: 2em;
+}
+
+
+.zoom {
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+ }
+
+ @media screen and (max-width: 880px) {
+     h1 {
+         font-size: 5em;
+     }
+
+     #monkey-riot {
+         font-size: 20px;
+     }
+ }
+
+ @media screen and (max-width: 750px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    #monkey-riot {
+        font-size: 16px;
+    }
+
+    #clock {
+        width: 520px;
+    }
+
+    #clock div {
+        width: 60px;
+        padding: 16px;
+        background:rgba(204, 204, 204, 0.418);
+        font-weight: 400;
+        font-size: 1em;
+
+    }
+}
+
+@media screen and (max-width: 525px) {
+    h1 {
+        font-size: 3.5em;
+        margin-top: 10px;
+        line-height: 1em;
+    }
+
+    #monkey-riot {
+        font-size: 16px;
+        text-shadow: none;
+        
+    }
+
+    #clock {
+        width: 350px;
+        line-height: 0.5em;
+    }
+
+    #clock div {
+        width: 50px;
+        padding: 13px;
+        margin: 0 5px;
+        background:rgba(204, 204, 204, 0.418);
+        color: white;
+        border-radius: 25px;
+        font-weight: 400;
+        font-size: .8em;
+        line-height: 1.1em;
+    }
+}
+
+
+
